@@ -5,6 +5,7 @@ select{
     color:  #1b3a57;
     padding: 3px;
     border-radius: 3px;
+    margin-bottom: 1rem;
 }
 
 select:focus{

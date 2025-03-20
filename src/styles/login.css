@@ -51,5 +51,24 @@
     color: #1b3a57;
     background-color: #d4af37;
   }
+  .signup-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .signup-text a {
+    color: #1b3a57;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .signup-text a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+  }
+  
   
   
