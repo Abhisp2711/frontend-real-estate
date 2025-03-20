@@ -20,7 +20,7 @@ function Navbar() {
           <Link to="/profile" className="btn">{user.name}</Link>
 
           {/* Show "Add Property" only if the user is a seller */}
-          {user.role === "seller" && <Link to="/add-property">Add Property</Link>}
+          {user.role === "seller" && <Link to="/add-property" className="btn">Add Property</Link>}
 
           <button onClick={handleLogout}>Logout</button>
         </>

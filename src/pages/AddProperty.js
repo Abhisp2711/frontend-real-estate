@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { createProperty } from "../services/api";
 import { useNavigate } from "react-router-dom";
+import "../styles/AddProperty.css";
 
 function AddProperty() {
   const [property, setProperty] = useState({
@@ -31,15 +32,18 @@ function AddProperty() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="login-container">
+      <form className="login-form" onSubmit={handleSubmit}>
       <h2>Add Property</h2>
       <input type="text" name="title" value={property.title} onChange={handleChange} placeholder="Title" required />
-      <textarea name="description" value={property.description} onChange={handleChange} placeholder="Description" required></textarea>
       <input type="number" name="price" value={property.price} onChange={handleChange} placeholder="Price" required />
       <input type="text" name="location" value={property.location} onChange={handleChange} placeholder="Location" required />
       <input type="text" name="images" value={property.images} onChange={handleChange} placeholder="Image URL" required />
+      <textarea name="description" value={property.description} onChange={handleChange} placeholder="Description" required></textarea>
       <button type="submit">Add Property</button>
     </form>
+    </div>
+ 
   );
 }
 

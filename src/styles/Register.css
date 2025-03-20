@@ -1,0 +1,19 @@
+select{
+    outline: none;
+    cursor: pointer;
+    background:#ffffff;
+    color:  #1b3a57;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+select:focus{
+    border-color: #d4af37;
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+    cursor: pointer;
+}
+select option{
+    background:#ffffff;
+    color: #1b3a57;
+    font-size: 16px;
+}

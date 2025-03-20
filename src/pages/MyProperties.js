@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import "../styles/MyProperties.css";
 
 return (
-  <div>
+  <div className="property-container">
     <h2>My Properties</h2>
     <Link to="/add-property">
       <button>Add Property</button>

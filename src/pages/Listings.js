@@ -10,12 +10,12 @@ function Listings() {
 
   return (
     <div>
-      <h2>Properties for Sale & Rent</h2>
+      <h2 className="listing-header">Properties for Sale & Rent</h2>
       <div className="listings">
         {listings.map((listing) => (
           <div key={listing._id} className="listing-card">
             <h3>{listing.title}</h3>
-            <p>Price: ${listing.price}</p>
+            <p>Price: ₹{listing.price}</p>
             <p>{listing.description}</p>
           </div>
         ))}

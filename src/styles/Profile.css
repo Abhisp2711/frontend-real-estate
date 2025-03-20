@@ -1,0 +1,30 @@
+.container-profile {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(to right,#f9f9f9, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-profile h2 {
+    color: #1b3a57;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.container-profile p {
+    font-size: 18px;
+    color: #333;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+
+.container-profile p:nth-child(4) {
+    font-weight: bold;
+    color: #d4af37;
+}
