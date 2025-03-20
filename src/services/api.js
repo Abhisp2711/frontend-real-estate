@@ -1,6 +1,12 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://backend-real-estate-ui1z.onrender.com/api" });
+const API = axios.create({
+  baseURL: "https://backend-real-estate-ui1z.onrender.com/api/",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  withCredentials: true,
+});
 
 // User Authentication
 export const registerUser = (userData) => API.post("/auth/register", userData);
