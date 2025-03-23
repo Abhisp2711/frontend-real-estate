@@ -3,6 +3,8 @@ import { createProperty } from "../services/api";
 import { useNavigate } from "react-router-dom";
 import "../styles/AddProperty.css";
 
+
+
 function AddProperty() {
   const [property, setProperty] = useState({
     title: "",
@@ -34,7 +36,7 @@ function AddProperty() {
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={handleSubmit}>
-      <h2>Add Property</h2>
+      <h4>Add Property</h4>
       <input type="text" name="title" value={property.title} onChange={handleChange} placeholder="Title" required />
       <input type="number" name="price" value={property.price} onChange={handleChange} placeholder="Price" required />
       <input type="text" name="location" value={property.location} onChange={handleChange} placeholder="Location" required />

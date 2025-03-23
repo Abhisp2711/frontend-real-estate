@@ -4,7 +4,6 @@ body{
   padding: 0;
   position : relative;
   height : 100vh;
-  overflow: hidden;
 }
 body::before {
   content: ""; 
@@ -13,7 +12,7 @@ body::before {
   background-position: center;
   background-attachment: fixed; 
   opacity: 0.2; 
-  position: absolute; 
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;

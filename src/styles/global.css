@@ -36,12 +36,16 @@ nav a:hover {
 .listings {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .listing-card {
+  display : flex;
+  justify-content : space-between;
+  align-items: center;
   position: relative;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   width: 300px;
   background: white;
   border-radius: 10px;
@@ -50,12 +54,26 @@ nav a:hover {
   border: 2px solid transparent;
   cursor: pointer;
 }
-
+.listing-card img{
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  height : 100px;
+  width: 100px;
+}
 .listing-card:hover {
   border: 2px solid #ff416c; /* Change to any color you like */
+
 }
 .listing-header{
   text-align: center;
 }
 
-
+i {
+  color: #1b3a57;
+  margin-top: 4px;
+  transition : color 0.3s ease-in-out;
+}
+.listing-card:hover i{
+  color:  #ff416c;
+}

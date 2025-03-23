@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
+import { capitalizeFirstLetter } from "../utils/capitalize";
 import { AuthContext } from "../context/AuthContext";
 
 function Navbar() {
@@ -17,7 +18,7 @@ function Navbar() {
 
       {user ? (
         <>
-          <Link to="/profile" className="btn">{user.name}</Link>
+          <Link to="/profile" className="btn">{capitalizeFirstLetter(user.name)}</Link>
 
           {/* Show "Add Property" only if the user is a seller */}
           {user.role === "seller" && <Link to="/add-property" className="btn">Add Property</Link>}

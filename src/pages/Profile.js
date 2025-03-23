@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
+import { capitalizeFirstLetter } from "../utils/capitalize";
 import "../styles/Profile.css";
 
 function Profile() {
@@ -12,9 +13,10 @@ function Profile() {
   return (
     <div className="container-profile">
       <h2>User Profile</h2>
-      <p>Name: {user.name}</p>
+      <p>Name: {capitalizeFirstLetter(user.name)}</p>
       <p>Email: {user.email}</p>
-      <p>Role: {user.role }</p>
+      <p>Role: {capitalizeFirstLetter(user.role)}</p>
+      
     </div>
   );
 }
